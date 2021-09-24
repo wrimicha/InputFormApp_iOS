@@ -3,23 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46641B8626FA367400DA969B /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = 46641B8526FA367400DA969B /* iPhoneNumberField */; };
+		46641B8826FA583500DA969B /* AboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46641B8726FA583500DA969B /* AboutMe.swift */; };
 		466B76E526F285A4008490C9 /* Assignment1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B76E426F285A4008490C9 /* Assignment1App.swift */; };
 		466B76E726F285A4008490C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B76E626F285A4008490C9 /* ContentView.swift */; };
 		466B76E926F285A6008490C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466B76E826F285A6008490C9 /* Assets.xcassets */; };
 		466B76EC26F285A6008490C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466B76EB26F285A6008490C9 /* Preview Assets.xcassets */; };
+		466B76F526F28A75008490C9 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B76F426F28A75008490C9 /* UserInfoView.swift */; };
+		4684711326F2AA420029242F /* NewPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4684711226F2AA420029242F /* NewPageView.swift */; };
+		46C5391126FD579C00B83111 /* WebsiteLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C5391026FD579C00B83111 /* WebsiteLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46641B8726FA583500DA969B /* AboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMe.swift; sourceTree = "<group>"; };
 		466B76E126F285A4008490C9 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		466B76E426F285A4008490C9 /* Assignment1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1App.swift; sourceTree = "<group>"; };
 		466B76E626F285A4008490C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		466B76E826F285A6008490C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		466B76EB26F285A6008490C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		466B76ED26F285A6008490C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		466B76F426F28A75008490C9 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		4684711226F2AA420029242F /* NewPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPageView.swift; sourceTree = "<group>"; };
+		46C5391026FD579C00B83111 /* WebsiteLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46641B8626FA367400DA969B /* iPhoneNumberField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +62,8 @@
 		466B76E326F285A4008490C9 /* Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				466B76F326F289F6008490C9 /* Views */,
 				466B76E426F285A4008490C9 /* Assignment1App.swift */,
-				466B76E626F285A4008490C9 /* ContentView.swift */,
 				466B76E826F285A6008490C9 /* Assets.xcassets */,
 				466B76ED26F285A6008490C9 /* Info.plist */,
 				466B76EA26F285A6008490C9 /* Preview Content */,
@@ -67,6 +77,18 @@
 				466B76EB26F285A6008490C9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		466B76F326F289F6008490C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				466B76E626F285A4008490C9 /* ContentView.swift */,
+				466B76F426F28A75008490C9 /* UserInfoView.swift */,
+				4684711226F2AA420029242F /* NewPageView.swift */,
+				46641B8726FA583500DA969B /* AboutMe.swift */,
+				46C5391026FD579C00B83111 /* WebsiteLink.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +107,9 @@
 			dependencies = (
 			);
 			name = Assignment1;
+			packageProductDependencies = (
+				46641B8526FA367400DA969B /* iPhoneNumberField */,
+			);
 			productName = Assignment1;
 			productReference = 466B76E126F285A4008490C9 /* Assignment1.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +137,9 @@
 				Base,
 			);
 			mainGroup = 466B76D826F285A4008490C9;
+			packageReferences = (
+				46641B8426FA367400DA969B /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
+			);
 			productRefGroup = 466B76E226F285A4008490C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				466B76E726F285A4008490C9 /* ContentView.swift in Sources */,
+				46641B8826FA583500DA969B /* AboutMe.swift in Sources */,
+				466B76F526F28A75008490C9 /* UserInfoView.swift in Sources */,
 				466B76E526F285A4008490C9 /* Assignment1App.swift in Sources */,
+				4684711326F2AA420029242F /* NewPageView.swift in Sources */,
+				46C5391126FD579C00B83111 /* WebsiteLink.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +358,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46641B8426FA367400DA969B /* XCRemoteSwiftPackageReference "iPhoneNumberField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MojtabaHs/iPhoneNumberField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46641B8526FA367400DA969B /* iPhoneNumberField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46641B8426FA367400DA969B /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
+			productName = iPhoneNumberField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 466B76D926F285A4008490C9 /* Project object */;
 }
